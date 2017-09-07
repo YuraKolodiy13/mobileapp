@@ -1,0 +1,66 @@
+.header{
+  background: url("../img/header.jpg") no-repeat center center;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  height: 760px;
+}
+.header__wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+}
+.header__img{
+  position: absolute;
+  top: 250px;
+  right: 40px;
+
+  img{
+    width: 420px;
+    height: 650px;
+  }
+}
+.header__info{
+  padding: 150px 0 0 40px;
+}
+.header__slogan-main{
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.header__slogan-secondarry{
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.header__list{
+  padding: 0;
+  margin: 50px 0;
+
+  li{
+    list-style: none;
+    font-size: 16px;
+    line-height: 36px;
+
+    &::before{
+      content: '>';
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+}
+.header__btn{
+  background: #17d0ac url("../img/download.png") no-repeat 30px center;
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  padding: 15px 0 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  &:hover{
+    background-color: #15bc9c;
+  }
+}

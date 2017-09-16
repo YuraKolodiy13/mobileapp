@@ -1,0 +1,100 @@
+.team{
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  padding: 80px 0;
+}
+.team__title-wrapper{
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+
+  &::after{
+    display: block;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #babdc1;
+    bottom: 38px;
+    left: 400px;
+    right: 400px;
+  }
+}
+.team__title{
+  color: #1ab798;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 5;
+  background: #fff url("../img/keyFeatures-bg.png") no-repeat bottom center;
+  width: 200px;
+  margin: auto;
+}
+.team__slogan{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #062033;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: .8;
+  margin-bottom: 100px;
+}
+.team__people{
+  display: flex;
+  justify-content: space-between;
+}
+.team__box{
+  width: 23%;
+  cursor: pointer;
+  &:hover{
+    .team__name{
+      color: #1ab798;
+    }
+  }
+}
+.team__img{
+  position: relative;
+  cursor: pointer;
+
+  img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -3px;
+  }
+  &:hover{
+    .team__img--hover{
+      display: block;
+    }
+  }
+}
+.team__img--hover{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(26, 183, 152, .8);
+  display: none;
+
+  p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.team__name{
+  font-size: 18px;
+  line-height: 24px;
+  color: #062033;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.team__post{
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  opacity: .56;
+}

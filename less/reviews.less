@@ -1,0 +1,106 @@
+.reviews{
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  padding: 80px 0;
+  font-family: 'Open sans', sans-serif;
+}
+.reviews__title-wrapper{
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+
+  &::after{
+    display: block;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #babdc1;
+    bottom: 38px;
+    left: 250px;
+    right: 250px;
+  }
+}
+.reviews__title{
+  color: #1ab798;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 5;
+  background: #fff url("../img/keyFeatures-bg.png") no-repeat bottom center;
+  width: 450px;
+  margin: auto;
+  text-transform: uppercase;
+}
+.reviews__item{
+  &:nth-child(n+1){
+    display: none;
+  }
+  p{
+    color: #282528;
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .reviews__author--name{
+    font-size: 18px;
+    line-height: 24px;
+    color: #062033;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .reviews__author--post{
+    font-size: 13px;
+    line-height: 18px;
+    color: #646464;
+    margin-bottom: 80px;
+  }
+}
+.slider{
+  width: 100%;
+
+  input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+  }
+}
+.reviews__author--photo{
+  img{
+    width: 115px;
+    height: 115px;
+    border-radius: 50% ;
+    border: 2px solid gray;
+  }
+}
+.slider__toggle{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #d4d3d4;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #1ab798;
+  }
+}
+#reviews-input-1:checked ~ .slider__toggles label[for="reviews-input-1"],
+#reviews-input-2:checked ~ .slider__toggles label[for="reviews-input-2"],
+#reviews-input-3:checked ~ .slider__toggles label[for="reviews-input-3"],
+#reviews-input-4:checked ~ .slider__toggles label[for="reviews-input-4"]{
+  background-color: #1ab798;
+}
+
+#reviews-input-1:checked ~ .reviews__list .reviews__item:nth-child(1){
+  display: block;
+}
+#reviews-input-2:checked ~ .reviews__list .reviews__item:nth-child(2){
+  display: block;
+}
+#reviews-input-3:checked ~ .reviews__list .reviews__item:nth-child(3){
+  display: block;
+}
+#reviews-input-4:checked ~ .reviews__list .reviews__item:nth-child(4){
+  display: block;
+}
